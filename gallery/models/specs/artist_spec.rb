@@ -4,7 +4,7 @@ require_relative("../artist")
 class TestArtist < MiniTest::Test
 
   def setup
-    options = {"id" => 1, "name" => "Claude Monet", "genre" => "impressionist"}
+    options = {"id" => 1, "name" => "Claude Monet", "genre" => "Impressionism"}
     @artist = Artist.new(options)
   end
 
@@ -20,7 +20,7 @@ class TestArtist < MiniTest::Test
 
   def test_genre()
     result = @artist.genre()
-    assert_equal("impressionist", result)
+    assert_equal("Impressionism", result)
   end
 
 end
