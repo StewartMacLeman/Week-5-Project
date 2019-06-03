@@ -36,14 +36,14 @@ attr_accessor :id, :name, :genre
     sql = "SELECT * FROM exhibits
     WHERE artist_id = $1"
     values = [@id]
-    exhibits = SqlRunner.run( sql, values )
+    exhibits = SqlRunner.run(sql, values)
     result = exhibits.map { |exhibit| Exhibit.new(exhibit) }
     return result
   end
 
   def self.all()
     sql = "SELECT * FROM artists"
-    artists = SqlRunner.run( sql )
+    artists = SqlRunner.run(sql)
     result = artists.map { |artist| Artist.new(artist) }
     return result
   end

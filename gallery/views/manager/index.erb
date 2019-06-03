@@ -1,0 +1,12 @@
+<h1>Gallery Exhibits</h1>
+<% @exhibits.each do |exhibit| %>
+  <p>Exhibit Name: <%= exhibit.exhibit_name() %></p>
+  <hr />
+<% end %>
+<div>
+  <h1>Artists</h1>
+<% @artists.each do |artist| %>
+<p>Artist Name: <%= artist.name() %></p>
+<hr />
+<% end %>
+</div>

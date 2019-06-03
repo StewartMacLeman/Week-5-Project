@@ -39,15 +39,15 @@ class Exhibit
       sql = "SELECT * FROM artists
       WHERE id = $1"
       values = [@artist_id]
-      artist = SqlRunner.run( sql,values )
-      result = Artist.new( artist.first )
+      artist = SqlRunner.run(sql,values)
+      result = Artist.new(artist.first)
       return result
     end
 
     def self.all()
       sql = "SELECT * FROM exhibits"
-      artists = SqlRunner.run( sql )
-      result = exhibits.map { |exhibit| Exhibit.new( exhibit ) }
+      exhibits = SqlRunner.run(sql)
+      result = exhibits.map { |item| Exhibit.new(item) }
       return result
     end
 

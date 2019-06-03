@@ -40,5 +40,8 @@ exhibit7 = Exhibit.new({"exhibit_name" => "Torso 2",
   "type" => "Oil Painting", "year" => "2004", "artist_id" => artist3.id})
 exhibit7.save()
 
+items = Exhibit.all()
+artists = Artist.all()
+
 binding.pry
 nil
