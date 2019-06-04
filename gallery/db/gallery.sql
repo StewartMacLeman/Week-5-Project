@@ -12,5 +12,5 @@ CREATE TABLE exhibits(
   exhibit_name VARCHAR(255),
   type VARCHAR(255),
   year VARCHAR(255),
-  artist_id INT8 REFERENCES artists(id)
+  artist_id INT8 REFERENCES artists(id) ON DELETE CASCADE
 );

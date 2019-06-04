@@ -1,0 +1,7 @@
+<p>Exhibit Name: <%= @exhibit_info.exhibit_name %></p>
+<p>Type: <%= @exhibit_info.type %></p>
+<p>Year: <%= @exhibit_info.year %></p>
+<p><a href="/manager/edit_exhibit/<%= @exhibit_info.id %>/edit">Edit Exhibit</a></p>
+<form method="post" action="/manager_delete_exhibit/<%= @exhibit_info.id %>/delete">
+  <input type="submit" value="Delete Exhibit"/>
+</form>

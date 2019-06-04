@@ -23,7 +23,7 @@ class Exhibit
     end
 
     def delete()
-      sql = "DELETE FROM exhibts WHERE id = $1"
+      sql = "DELETE FROM exhibits WHERE id = $1"
       values = [@id]
       SqlRunner.run(sql, values)
     end

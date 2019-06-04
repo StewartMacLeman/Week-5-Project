@@ -32,10 +32,10 @@ attr_accessor :id, :name, :genre
     SqlRunner.run(sql, values)
   end
 
-  def exhibits() #Returns the exhibits by an artist.
+  def self.exhibits(artist_id) #Returns the exhibits by an artist.
     sql = "SELECT * FROM exhibits
     WHERE artist_id = $1"
-    values = [@id]
+    values = [artist_id]
     exhibits = SqlRunner.run(sql, values)
     result = exhibits.map { |exhibit| Exhibit.new(exhibit) }
     return result

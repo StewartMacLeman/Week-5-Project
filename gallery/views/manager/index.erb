@@ -1,12 +1,20 @@
 <h1>Gallery Exhibits</h1>
 <% @exhibits.each do |exhibit| %>
   <p>Exhibit Name: <%= exhibit.exhibit_name() %></p>
+  <p><a href="/manager/info_exhibit/<%= exhibit.id %>">Show Details</a></p>
   <hr />
 <% end %>
+<a href="/manager/new_exhibit">Add more exhibits</a>
+
 <div>
   <h1>Artists</h1>
 <% @artists.each do |artist| %>
 <p>Artist Name: <%= artist.name() %></p>
+<p><a href="/manager/info_artist/<%= artist.id %>">Show Details</a></p>
 <hr />
 <% end %>
+
+
 </div>
+
+<a href="/manager/new_artist">Add more artists</a>

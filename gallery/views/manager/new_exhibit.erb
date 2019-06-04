@@ -1,0 +1,32 @@
+<form method="post" action="/manager_new_exhibit">
+
+  <label for="artist_id">Select an artist</label>
+  <select name="artist_id" id="artist_id">
+    <% for artist in @artists %> 
+      <option value="<%= artist.id %>"><%= artist.name %></option>
+    <% end %>
+  </select>
+
+  <label for="exhibit_name">Exhibits's Name:</label>
+  <input
+  type="text"
+  name="exhibit_name"
+  id="exhibit_name"
+  />
+
+  <label for="type">Type:</label>
+  <input
+  type="text"
+  name="type"
+  id="type"
+  />
+
+  <label for="year">Year:</label>
+  <input
+  type="text"
+  name="year"
+  id="year"
+  />
+
+  <input type="submit" value="Add new exhibit">
+</form>

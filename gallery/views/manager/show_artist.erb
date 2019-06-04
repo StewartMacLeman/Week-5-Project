@@ -1,0 +1,4 @@
+<p>Genre: <%= @artist_info.genre %> </p>
+<form method="post" action="/manager_delete_artist/<%= @artist_info.id %>/delete">
+  <input type="submit" value="Delete Artist"/>
+</form>

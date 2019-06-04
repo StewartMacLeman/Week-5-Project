@@ -1,6 +1,19 @@
 <h1>Gallery Exhibits</h1>
 <% @exhibits.each do |exhibit| %>
-  <p>Exhibit Name: <%= exhibit.exhibit_name() %></p>
+  <p>Exhibit Name: <%= exhibit.exhibit_name %></p>
   <p><a href="/visitor/info/<%= exhibit.id %>">Show Details</a></p>
   <hr />
 <% end %>
+
+<h1>Exhibits by Artist</h1>
+
+<form method="post" action="/visitor_exhibits_by_artist">
+<label for="artist_id">Select an artist</label>
+<select name="artist_id" id="artist_id">
+  <% for artist in @artists %>
+    <option value="<%= artist.id %>"><%= artist.name %></option>
+  <% end %>
+</select>
+
+<input type="submit" value="select">
+</form>
