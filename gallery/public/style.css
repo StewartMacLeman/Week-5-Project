@@ -1,0 +1,84 @@
+html {
+  margin: 10px;
+  padding: 10px;
+  background-color: grey;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  background: white;
+  border-top: 10px solid darkgrey;
+  border-bottom: 10px solid darkgrey;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+}
+
+h1 {
+  font-family: Georgia;
+  font-size: 60px;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  background: grey;
+  padding: 3px;
+}
+
+h2 {
+  font-family: Georgia;
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  font-family: Georgia;
+  font-size: 22px;
+  text-align: center;
+}
+
+form {
+  font-family: Georgia;
+  font-size: 15px;
+  text-align: center;
+}
+
+label {
+  font-family: Georgia;
+  font-size: 22px;
+  text-align: center;
+}
+
+select {
+  font-family: Georgia;
+  font-size: 22px;
+  text-align: center;
+}
+
+option {
+  font-family: Georgia;
+  font-size: 22px;
+  text-align: center;
+}
+
+input {
+  font-family: Georgia;
+  font-size: 22px;
+  text-align: center;
+}
+
+img {
+  width: 50%;
+  margin: 1px auto;
+  display: block;
+  border: 2px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color: red;
+}

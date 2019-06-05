@@ -54,13 +54,13 @@ post '/manager_delete_exhibit/:id/delete' do
   redirect to '/manager'
 end
 
-get '/manager/edit_exhibit/:id/edit' do #edit
+get '/manager/edit_exhibit/:id/edit' do
   @exhibit_info = Exhibit.find(params[:id])
-  @artists = Artist.all() #do I need this?
+  @artists = Artist.all()
   erb(:"manager/edit_exhibit")
 end
 
-post '/manager/edit_exhibit/:id' do #update
+post '/manager/edit_exhibit/:id' do 
   Exhibit.new(params).update
   redirect to '/manager'
 end

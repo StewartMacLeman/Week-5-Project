@@ -4,9 +4,8 @@
   <p><a href="/manager/info_exhibit/<%= exhibit.id %>">Show Details</a></p>
   <hr />
 <% end %>
-<a href="/manager/new_exhibit">Add more exhibits</a>
+<p><a href="/manager/new_exhibit">Add more exhibits</a></p>
 
-<div>
   <h1>Artists</h1>
 <% @artists.each do |artist| %>
 <p>Artist Name: <%= artist.name() %></p>
@@ -14,7 +13,4 @@
 <hr />
 <% end %>
 
-
-</div>
-
-<a href="/manager/new_artist">Add more artists</a>
+<p><a href="/manager/new_artist">Add more artists</a></p>
